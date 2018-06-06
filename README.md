@@ -35,17 +35,12 @@
   
 ### Przygotowanie Workspace dla ROS
   ```
-  mkdir ~/ROS_WS
-  cd ~/ROS_WS
-  git clone https://github.com/luki193/EConTara_OrbSlam2_CheckerBoardDetector.git
+  git clone https://github.com/luki193/Econ_tara.git
+  rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
   catkin_make
   source devel/setup.bash
   ```
   
-  W przypadku pojawienia się błędów z paczkami należy zainstalować niezbędne powiązania między pakietami ROS:
-```
-rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
-```
   
   
 ### Instalacja ORB-SLAM2
