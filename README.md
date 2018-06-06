@@ -56,7 +56,7 @@ gedit ~/.bashrc
 ```
   Na końcu pliku .bashrc należy dodać poniższą linijkę:
 ```
-export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/Econ_tara/ORB_SLAM2/Examples/ROS
 ```
 
   Po wykonaniu powyższych czynności należy ponownie uruchomić konsolę:
