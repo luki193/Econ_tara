@@ -37,6 +37,7 @@
   ```
   git clone https://github.com/luki193/Econ_tara.git
   rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
+  cd Econ_tara
   catkin_make
   source devel/setup.bash
   ```
@@ -51,18 +52,19 @@
   
   Otwarcie pliku .bashrc:
 ```
-cd ..
-gedit .bashrc
+gedit ~/.bashrc
 ```
   Na końcu pliku .bashrc należy dodać poniższą linijkę:
 ```
 export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/ORB_SLAM2/Examples/ROS
 ```
 
-  Po wykonaniu powyższych czynności można zbudować ORB-SLAM2:
+  Po wykonaniu powyższych czynności należy ponownie uruchomić konsolę:
 ```
-cd ORB_SLAM2
+cd Econ_tara/ORB_SLAM2
 chmod +x build.sh
 ./build.sh
+chmod +x build_ros.sh
+./build_ros.sh
 ```
 
